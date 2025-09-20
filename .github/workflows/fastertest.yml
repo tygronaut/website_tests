@@ -10,6 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Run Playwright tests
-      uses: docker://mcr.microsoft.com/playwright:v1.34.3-jammy
+      uses: docker://mcr.microsoft.com/playwright:v1.55.0-jammy
       with:
         args: npx playwright test
