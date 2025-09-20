@@ -11,7 +11,7 @@ test('get started link', async ({ page }) => {
   await page.goto('https://www.tygron.com/nl');
 
   // Click the get started link.
-  await page.getByRole('button', { name: 'Free Trial' }).click();
+  await page.getByRole('a', { name: 'Free Trial' }).click();
 
   // Expects page to have a heading with the name of Installation.
   await expect(page.getByRole('paragraph', { name: 'Start uw 10 dagen free trial' })).toBeVisible();
